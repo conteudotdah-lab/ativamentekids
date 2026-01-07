@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 20% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 20%;
+
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 30 100% 97%;
+    --secondary-foreground: 24 95% 40%;
+
+    --muted: 30 20% 96%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 160 84% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 20% 90%;
+    --input: 30 20% 90%;
+    --ring: 24 95% 53%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --orange-light: 30 100% 95%;
+    --orange-medium: 24 95% 53%;
+    --orange-dark: 24 95% 40%;
+    --green-cta: 160 84% 39%;
+    --green-cta-hover: 160 84% 34%;
+    --warm-cream: 40 40% 97%;
+    --warm-peach: 25 100% 94%;
+    --text-dark: 220 20% 20%;
+    --text-muted: 220 10% 50%;
+
+    --gradient-urgency: linear-gradient(135deg, hsl(0 70% 50%) 0%, hsl(24 95% 53%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(160 84% 39%) 0%, hsl(160 84% 45%) 100%);
+    --shadow-card: 0 4px 20px -4px hsl(24 95% 53% / 0.15);
+    --shadow-card-hover: 0 8px 30px -4px hsl(24 95% 53% / 0.25);
+    --shadow-cta: 0 4px 15px -2px hsl(160 84% 39% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
